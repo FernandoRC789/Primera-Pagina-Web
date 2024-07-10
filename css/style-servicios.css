@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/*inicio de encabezado*/
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FDF0CE;              /*aqui se modifica el color de fondo de la navegacion el header*/
+    padding: 10px 20px;
+    height: 80px;
+}
+
+.logo{
+    width:  80px;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #000000;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: #FDF0CE;              /*aqui se modifica el color de seleccion*/
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: white;                        /*aqui se modifica el color de sub menus*/ 
+    border-top: 3px solid #2E1572;                  /*color de line que separa el menu de sub menu*/
+    z-index: 1000;
+    margin-top: 0;
+    min-width: 200px;
+}
+
+.submenu li {
+    margin-bottom: 0;
+}
+
+nav ul li:hover > .submenu {
+    display: block;
+}
+.header-contact {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    gap: 10px;
+}
+.header-contact button {
+    text-decoration: none;
+    background-color: #444444;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    height: 50px;
+    height: auto;
+    cursor: pointer;
+
+}
+
+.img_logo {
+    text-align: left;
+    margin-top: 20px;
+    justify-items: center;
+}
+
+.img_logo h3 {
+    float: right;
+    margin-left: 6px;
+    font-family: Arial, sans-serif;
+    margin-top: 10px;
+}
+.header-contact a {
+    text-decoration: none;
+    background-color: #444444;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+                                        /*fin de encabezado y inicio de body*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.texto {
+    background-color: rgb(196, 13, 13);
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.general {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.general-1 {
+    width: 50%;
+    padding: 20px;
+    background-color: white;
+}
+
+.general-2, .general-3, .general-4, .general-5 {
+    width: 50%;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.general-2 {
+    background-image: url(../imgs/img-servicios/ambulancia.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.general-3 {
+    background-image: url(../imgs/img-servicios/medico.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.general-4 {
+    background-image: url(../imgs/img-servicios/banco.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.general-5 {
+    background-image: url(../imgs/img-servicios/fisica.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.especialidades {
+    background-color: rgb(196, 13, 13);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+
+.especialidades h3 {
+    text-align: center;
+    padding: 10px;
+    justify-content:space-between;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    text-transform: uppercase;
+    background-color: rgb(196, 13, 13);
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+p {
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+/*termina body y empieza el pie de pagina*/
+
+/*INICIO - pie de pagina*/
+#piepag{
+    background-color: #2E1572;
+    color: white;
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    margin-top: 20px;
+    padding-top: 20px ;
+}
+
+#pietitulo{
+	font-family: "Source Sans 3", sans-serif;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 1.28;
+	text-align: center;
+    margin-bottom: 1px;
+}
+#piep{
+    width: 300px;
+    height: 99px;
+    color: #FFFFFF;
+    font-family: "Helvetica", Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.3;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+#pielink{
+    line-height: 1.5;
+}
+#pie2{
+    text-align: center;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+#pie2titulo{
+    font-family: "Arial";
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+#pie2 p{
+    font-family: "Helvetica";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.3;
+    text-align: left;
+}
+#pie2bajo{
+    margin-top: 50px;
+}
+#pie3{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#pie3 h4{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+}
+#inpform input{
+    width: 180px;
+    height: 20px;
+    border-radius: 14px;
+    border-style: solid;
+    padding: 4px 8px 4px 8px;
+    border-color: #232323;
+    border-width: 1px;
+    font-style: normal;
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+#inpform select{
+    margin-bottom: 5px;
+    text-align: left;
+    margin-right: 50px;
+}
+/*FIN- pie de pagina*/
